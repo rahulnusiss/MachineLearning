@@ -1,0 +1,246 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 10 -R" -B "weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1" -B "weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1" -R AVG
+Relation:     Diabetes-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    768
+Attributes:   9
+              nPreg
+              glu_Conc
+              diastolic
+              triceps
+              insulin
+              bmi
+              pedigreeFn
+              age
+              diabeticclass
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 10 -R
+	weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+	weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+using the 'Average' combination rule 
+
+All the models:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.986355880507873
+    Node 2    7.463195826270674
+    Node 3    1.9789452690274214
+    Node 4    4.107505815127908
+    Node 5    3.43908590388152
+    Node 6    4.366773344579858
+    Node 7    2.95282779767754
+    Node 8    -3.867699330716916
+    Node 9    -7.631489651132951
+    Node 10    3.2919195813463924
+    Node 11    5.463067633093789
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.98630729277123
+    Node 2    -7.463759357224034
+    Node 3    -1.96117162157893
+    Node 4    -4.107759756866115
+    Node 5    -3.4387146517886302
+    Node 6    -4.375368792585015
+    Node 7    -2.9529625950088945
+    Node 8    3.8677776755813427
+    Node 9    7.631787362464656
+    Node 10    -3.292005295238291
+    Node 11    -5.463091494421475
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -4.453122152817627
+    Attrib nPreg    4.464430690127041
+    Attrib glu_Conc    2.396015453912751
+    Attrib diastolic    -0.32611758244469463
+    Attrib triceps    -7.036750079755477
+    Attrib insulin    1.7153443105984456
+    Attrib bmi    -4.234289756492288
+    Attrib pedigreeFn    9.249250881236957
+    Attrib age    3.7195786065336085
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.8506354947911852
+    Attrib nPreg    -0.0035048511549947443
+    Attrib glu_Conc    -1.4143852539923836
+    Attrib diastolic    1.1871040708724518
+    Attrib triceps    0.04675569581256558
+    Attrib insulin    2.652263896386789
+    Attrib bmi    2.4284288694190312
+    Attrib pedigreeFn    2.3524686490561035
+    Attrib age    -1.5572839879893516
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.337639693702296
+    Attrib nPreg    -0.28017181790451773
+    Attrib glu_Conc    -18.039298205800574
+    Attrib diastolic    5.267378954260474
+    Attrib triceps    -2.539372662138886
+    Attrib insulin    2.276765027974415
+    Attrib bmi    -2.540142495904519
+    Attrib pedigreeFn    2.8007823573624973
+    Attrib age    -3.558662107764394
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.397622881871523
+    Attrib nPreg    -5.08175571127999
+    Attrib glu_Conc    -4.85228170661979
+    Attrib diastolic    -2.010313287843993
+    Attrib triceps    -1.9597440176299528
+    Attrib insulin    0.2703044988803679
+    Attrib bmi    1.1125911934873987
+    Attrib pedigreeFn    10.028940051171338
+    Attrib age    12.226774971129606
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.231978141600994
+    Attrib nPreg    -2.047802076706459
+    Attrib glu_Conc    -1.5753685919766716
+    Attrib diastolic    2.596476124634748
+    Attrib triceps    1.195736278733316
+    Attrib insulin    4.480232596712059
+    Attrib bmi    4.7623943335662995
+    Attrib pedigreeFn    6.3151191641725335
+    Attrib age    -0.8907839695288765
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -3.55136653783534
+    Attrib nPreg    7.683219530182687
+    Attrib glu_Conc    -12.107387841864169
+    Attrib diastolic    5.11405786827936
+    Attrib triceps    -0.8043486550303524
+    Attrib insulin    -1.1217054898013226
+    Attrib bmi    -4.9227747776088755
+    Attrib pedigreeFn    -0.5885243296978284
+    Attrib age    -14.835519621967508
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.26041283588552044
+    Attrib nPreg    10.360114003385993
+    Attrib glu_Conc    -8.753135139479044
+    Attrib diastolic    4.131378348796711
+    Attrib triceps    2.538481377218871
+    Attrib insulin    -1.4427421810043781
+    Attrib bmi    -2.3066362281040136
+    Attrib pedigreeFn    4.28706835178297
+    Attrib age    -8.29709527539732
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    1.3446837257640214
+    Attrib nPreg    12.364583621507844
+    Attrib glu_Conc    5.7486336306063075
+    Attrib diastolic    -10.51780184953886
+    Attrib triceps    1.1887467236684575
+    Attrib insulin    1.9755189357396905
+    Attrib bmi    3.519737954864524
+    Attrib pedigreeFn    8.771184451830909
+    Attrib age    -3.025975081748801
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -4.602783697037024
+    Attrib nPreg    1.4003523577364703
+    Attrib glu_Conc    -0.23220152096427726
+    Attrib diastolic    -0.5061961983933453
+    Attrib triceps    4.905104559003288
+    Attrib insulin    -1.3900942148706719
+    Attrib bmi    -12.434899455889997
+    Attrib pedigreeFn    -12.487688965241718
+    Attrib age    -3.9272071092062872
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.2994301480415775
+    Attrib nPreg    2.8642790872202584
+    Attrib glu_Conc    -7.1632576039416715
+    Attrib diastolic    -9.316607353117135
+    Attrib triceps    1.9592518072613063
+    Attrib insulin    0.6611954433775372
+    Attrib bmi    -0.5734639719663209
+    Attrib pedigreeFn    -6.685448816480245
+    Attrib age    10.6394656371464
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+Output weights for different classes:
+12.022450893387688	-12.028829070742235	
+
+Unit center:
+-0.025507637639445347	-0.29771878380325384	0.5694346084642476	0.1983734403451392	0.180077435414781	-0.11253779284989615	-0.12354300806064335	0.20955605203142993	
+
+Unit scale:
+0.8749271873468446	
+
+Output weights for different classes:
+-0.002077527426441697	0.012768853868598606	
+
+Unit center:
+-3.857068556457775	-5.458674720431753	-0.6314257532534466	-0.39336714583754734	-0.9749557673307906	-2.229927982083081	-1.6505751896000842	-4.076232495679962	
+
+Unit scale:
+-1.1614697269200258	
+
+Bias weights for different classes:
+-3.8645944380622903	3.866306779747372	
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable              0
+=======================
+pCluster_0_0     0.3705
+pCluster_0_1     1.5572
+pCluster_1_0    -2.0441
+pCluster_1_1    -1.6411
+Intercept        0.6334
+
+
+Odds Ratios...
+                  Class
+Variable              0
+=======================
+pCluster_0_0     1.4485
+pCluster_0_1     4.7457
+pCluster_1_0     0.1295
+pCluster_1_1     0.1938
+
+
+
+Time taken to build model: 1.18 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         155               80.7292 %
+Incorrectly Classified Instances        37               19.2708 %
+Kappa statistic                          0.5537
+Mean absolute error                      0.3023
+Root mean squared error                  0.3715
+Relative absolute error                 67.2051 %
+Root relative squared error             79.233  %
+Total Number of Instances              192     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.869    0.323    0.850      0.869    0.859      0.554    0.866     0.931     0
+                 0.677    0.131    0.712      0.677    0.694      0.554    0.866     0.795     1
+Weighted Avg.    0.807    0.261    0.805      0.807    0.806      0.554    0.866     0.887     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 113  17 |   a = 0
+  20  42 |   b = 1
+

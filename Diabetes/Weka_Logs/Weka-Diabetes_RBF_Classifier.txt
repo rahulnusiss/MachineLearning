@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+Relation:     Diabetes-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    768
+Attributes:   9
+              nPreg
+              glu_Conc
+              diastolic
+              triceps
+              insulin
+              bmi
+              pedigreeFn
+              age
+              diabeticclass
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Output weights for different classes:
+12.022450893387688	-12.028829070742235	
+
+Unit center:
+-0.025507637639445347	-0.29771878380325384	0.5694346084642476	0.1983734403451392	0.180077435414781	-0.11253779284989615	-0.12354300806064335	0.20955605203142993	
+
+Unit scale:
+0.8749271873468446	
+
+Output weights for different classes:
+-0.002077527426441697	0.012768853868598606	
+
+Unit center:
+-3.857068556457775	-5.458674720431753	-0.6314257532534466	-0.39336714583754734	-0.9749557673307906	-2.229927982083081	-1.6505751896000842	-4.076232495679962	
+
+Unit scale:
+-1.1614697269200258	
+
+Bias weights for different classes:
+-3.8645944380622903	3.866306779747372	
+
+Time taken to build model: 0.2 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         149               77.6042 %
+Incorrectly Classified Instances        43               22.3958 %
+Kappa statistic                          0.4813
+Mean absolute error                      0.3327
+Root mean squared error                  0.3881
+Relative absolute error                 73.9695 %
+Root relative squared error             82.7656 %
+Total Number of Instances              192     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.846    0.371    0.827      0.846    0.837      0.482    0.841     0.907     0
+                 0.629    0.154    0.661      0.629    0.645      0.482    0.841     0.738     1
+Weighted Avg.    0.776    0.301    0.773      0.776    0.775      0.482    0.841     0.852     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 110  20 |   a = 0
+  23  39 |   b = 1
+

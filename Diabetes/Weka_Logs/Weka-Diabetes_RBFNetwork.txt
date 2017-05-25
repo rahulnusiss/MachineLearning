@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+Relation:     Diabetes-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    768
+Attributes:   9
+              nPreg
+              glu_Conc
+              diastolic
+              triceps
+              insulin
+              bmi
+              pedigreeFn
+              age
+              diabeticclass
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable              0
+=======================
+pCluster_0_0     0.3705
+pCluster_0_1     1.5572
+pCluster_1_0    -2.0441
+pCluster_1_1    -1.6411
+Intercept        0.6334
+
+
+Odds Ratios...
+                  Class
+Variable              0
+=======================
+pCluster_0_0     1.4485
+pCluster_0_1     4.7457
+pCluster_1_0     0.1295
+pCluster_1_1     0.1938
+
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         154               80.2083 %
+Incorrectly Classified Instances        38               19.7917 %
+Kappa statistic                          0.5435
+Mean absolute error                      0.3045
+Root mean squared error                  0.373 
+Relative absolute error                 67.7069 %
+Root relative squared error             79.5499 %
+Total Number of Instances              192     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.862    0.323    0.848      0.862    0.855      0.544    0.867     0.930     0
+                 0.677    0.138    0.700      0.677    0.689      0.544    0.867     0.791     1
+Weighted Avg.    0.802    0.263    0.801      0.802    0.801      0.544    0.867     0.885     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 112  18 |   a = 0
+  20  42 |   b = 1
+

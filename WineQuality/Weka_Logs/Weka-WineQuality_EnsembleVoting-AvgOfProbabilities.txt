@@ -1,0 +1,389 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 11" -B "weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1" -R AVG
+Relation:     winequality-white-weka.filters.unsupervised.attribute.NumericToNominal-Rlast
+Instances:    4898
+Attributes:   12
+              fixed acidity
+              volatile acidity
+              citric acid
+              residual sugar
+              chlorides
+              free sulfur dioxide
+              total sulfur dioxide
+              density
+              pH
+              sulphates
+              alcohol
+              quality
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 11
+	weka.classifiers.functions.RBFNetwork -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1
+using the 'Average' combination rule 
+
+All the models:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -5.506174199203609
+    Node 7    -0.9695507787810579
+    Node 8    -1.0013900621330665
+    Node 9    -1.1622576736302113
+    Node 10    -0.9417658275310595
+    Node 11    -1.1890824087219976
+    Node 12    -0.8936498210672017
+    Node 13    -0.305134414650215
+    Node 14    -0.7739126249878623
+    Node 15    -1.3829158393185896
+    Node 16    -0.8947994897994408
+    Node 17    -1.203932902236334
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.515002750372861
+    Node 7    -1.725376615694952
+    Node 8    2.6507873038654948
+    Node 9    -6.082900520185472
+    Node 10    -2.5009759318191147
+    Node 11    -2.0304199887002747
+    Node 12    -1.0951748486774822
+    Node 13    4.2348800119960295
+    Node 14    1.5216275461392483
+    Node 15    -5.7348749803095105
+    Node 16    1.622096421176544
+    Node 17    -4.261160912298797
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.0923279891090472
+    Node 7    2.2638009794768985
+    Node 8    -0.49372248078045894
+    Node 9    1.388832544212021
+    Node 10    7.2258013322481744
+    Node 11    -1.8120436879958954
+    Node 12    1.4230679771118977
+    Node 13    1.104030021885341
+    Node 14    1.1809376348580796
+    Node 15    -7.221410476019003
+    Node 16    -1.1079463927147357
+    Node 17    -7.133166252493487
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.28244247592783217
+    Node 7    -3.510186223027778
+    Node 8    -0.933766415581556
+    Node 9    0.1102300108468082
+    Node 10    0.9421864776475223
+    Node 11    2.7286655908985957
+    Node 12    -0.8561705203142105
+    Node 13    -1.7700867334101942
+    Node 14    -0.2565360209581349
+    Node 15    -1.8312810313337142
+    Node 16    -1.444050094680572
+    Node 17    0.3412968491888291
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.7083807261761158
+    Node 7    -4.994626373604524
+    Node 8    8.724388028574719
+    Node 9    -12.830686893046039
+    Node 10    -6.3618923357264405
+    Node 11    -2.9576648867708992
+    Node 12    -3.991101256786462
+    Node 13    -4.4534207447676915
+    Node 14    -8.046536364651455
+    Node 15    0.9547072573802371
+    Node 16    1.2417491213999237
+    Node 17    4.397587099769616
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.288334129095756
+    Node 7    -0.12522965081390272
+    Node 8    2.0749276023414986
+    Node 9    -2.2697036195904228
+    Node 10    -3.087957801750303
+    Node 11    -2.366855355748108
+    Node 12    -1.8991337383479991
+    Node 13    -3.7729077541512908
+    Node 14    -0.3335715338962376
+    Node 15    2.222824476749128
+    Node 16    0.6402612013796743
+    Node 17    2.080767495848802
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -6.064104338903229
+    Node 7    -1.0684845746956153
+    Node 8    -1.152768269037493
+    Node 9    -1.1989228511754886
+    Node 10    -1.108337630676435
+    Node 11    -1.15778833616415
+    Node 12    -1.568849044005699
+    Node 13    -1.22478296075499
+    Node 14    -1.087484054102017
+    Node 15    -1.1911979342114063
+    Node 16    -0.9460318769495479
+    Node 17    -1.3173001186699556
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    5.188754463033846
+    Attrib fixed acidity    1.3975161309816557
+    Attrib volatile acidity    2.3093536820948377
+    Attrib citric acid    3.300066102352256
+    Attrib residual sugar    3.3287850366875458
+    Attrib chlorides    5.174525745829956
+    Attrib free sulfur dioxide    5.8936597143342535
+    Attrib total sulfur dioxide    3.024512622702716
+    Attrib density    -3.999325531782388
+    Attrib pH    -2.3626078512225916
+    Attrib sulphates    2.863013474808231
+    Attrib alcohol    -4.67941551378755
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -10.277169982305447
+    Attrib fixed acidity    0.3137813577540679
+    Attrib volatile acidity    -4.111109181454694
+    Attrib citric acid    -7.843994092545838
+    Attrib residual sugar    6.911443611577581
+    Attrib chlorides    8.903492097816438
+    Attrib free sulfur dioxide    -9.985378057943274
+    Attrib total sulfur dioxide    10.40664553718307
+    Attrib density    7.863071558991441
+    Attrib pH    5.371832181640317
+    Attrib sulphates    -3.866434668819036
+    Attrib alcohol    -19.03670162760875
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    8.502004990090798
+    Attrib fixed acidity    1.2349934879725288
+    Attrib volatile acidity    -0.5847989487709687
+    Attrib citric acid    5.186301110049904
+    Attrib residual sugar    12.721747127943072
+    Attrib chlorides    -0.15418901585399283
+    Attrib free sulfur dioxide    2.3607826322885925
+    Attrib total sulfur dioxide    -0.4115202859872211
+    Attrib density    2.4053316298795737
+    Attrib pH    5.594074232941058
+    Attrib sulphates    -5.088299476805059
+    Attrib alcohol    -3.45303965407556
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    2.891084991465985
+    Attrib fixed acidity    4.037116614690629
+    Attrib volatile acidity    -4.822104341808622
+    Attrib citric acid    1.020304174217869
+    Attrib residual sugar    9.475687264050894
+    Attrib chlorides    -1.2032206484441514
+    Attrib free sulfur dioxide    9.213017308707277
+    Attrib total sulfur dioxide    8.761790637036505
+    Attrib density    -0.20437420448321528
+    Attrib pH    -6.788155360714033
+    Attrib sulphates    4.593851573743997
+    Attrib alcohol    -6.495762952511525
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    0.31551239345208576
+    Attrib fixed acidity    11.268534794463157
+    Attrib volatile acidity    -7.333657038282102
+    Attrib citric acid    7.054295793028628
+    Attrib residual sugar    -9.956972375543327
+    Attrib chlorides    22.910550698740252
+    Attrib free sulfur dioxide    1.17767439455396
+    Attrib total sulfur dioxide    -4.998772803073238
+    Attrib density    -4.612178584979223
+    Attrib pH    -0.6707746998961289
+    Attrib sulphates    0.6191277772948066
+    Attrib alcohol    7.66469102370431
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -14.155400196598515
+    Attrib fixed acidity    -2.3428881179855217
+    Attrib volatile acidity    14.328600156669056
+    Attrib citric acid    0.373841121816044
+    Attrib residual sugar    -14.11490298521979
+    Attrib chlorides    -1.0119378199294555
+    Attrib free sulfur dioxide    -9.648305087273084
+    Attrib total sulfur dioxide    6.734608643534503
+    Attrib density    1.0603684464622136
+    Attrib pH    -4.816563377925458
+    Attrib sulphates    -2.5427812099844758
+    Attrib alcohol    -12.463497760649883
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -18.415839389547155
+    Attrib fixed acidity    0.8813123885483828
+    Attrib volatile acidity    3.2118198843402017
+    Attrib citric acid    -0.17311166318883336
+    Attrib residual sugar    -15.100787179027956
+    Attrib chlorides    1.423408221881198
+    Attrib free sulfur dioxide    -24.387303976230285
+    Attrib total sulfur dioxide    -2.1570452710763486
+    Attrib density    21.81064160609914
+    Attrib pH    -1.8254126799795856
+    Attrib sulphates    -0.9663040933400958
+    Attrib alcohol    -0.1762090887935326
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -1.5773236944476559
+    Attrib fixed acidity    0.4902488853213881
+    Attrib volatile acidity    -1.8558698053861307
+    Attrib citric acid    -23.004954867831604
+    Attrib residual sugar    6.216265892393765
+    Attrib chlorides    6.862940602477483
+    Attrib free sulfur dioxide    7.281339792243905
+    Attrib total sulfur dioxide    6.453718923584065
+    Attrib density    1.1739710526750398
+    Attrib pH    2.588976439963697
+    Attrib sulphates    -0.3376832968178361
+    Attrib alcohol    -3.699060986190846
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -5.282740158615466
+    Attrib fixed acidity    1.0147813329572875
+    Attrib volatile acidity    -3.545851593132977
+    Attrib citric acid    1.8453423079019413
+    Attrib residual sugar    8.517399632347782
+    Attrib chlorides    -3.1233367717240528
+    Attrib free sulfur dioxide    6.231218127180874
+    Attrib total sulfur dioxide    -2.0121240913862772
+    Attrib density    -14.84652358854016
+    Attrib pH    2.0043628291656534
+    Attrib sulphates    1.8908092091624733
+    Attrib alcohol    2.1279652636889184
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.7355554881762449
+    Attrib fixed acidity    11.019638487300432
+    Attrib volatile acidity    13.348590926939933
+    Attrib citric acid    -11.263886003763723
+    Attrib residual sugar    3.282031396753399
+    Attrib chlorides    -8.664487722388321
+    Attrib free sulfur dioxide    11.046918039602211
+    Attrib total sulfur dioxide    -3.655594327066225
+    Attrib density    -7.75215356306035
+    Attrib pH    9.02465780353293
+    Attrib sulphates    0.47816891976153436
+    Attrib alcohol    6.582548459804699
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -10.479290827737378
+    Attrib fixed acidity    9.35717869921895
+    Attrib volatile acidity    -18.819081700113223
+    Attrib citric acid    -8.378902782373284
+    Attrib residual sugar    6.146668060853136
+    Attrib chlorides    3.7585257865548454
+    Attrib free sulfur dioxide    -1.1390094813863478
+    Attrib total sulfur dioxide    17.88107253306018
+    Attrib density    9.058659889637799
+    Attrib pH    -8.502480122165924
+    Attrib sulphates    1.6173443316210296
+    Attrib alcohol    -8.78818793155804
+Class 3
+    Input
+    Node 0
+Class 4
+    Input
+    Node 1
+Class 5
+    Input
+    Node 2
+Class 6
+    Input
+    Node 3
+Class 7
+    Input
+    Node 4
+Class 8
+    Input
+    Node 5
+Class 9
+    Input
+    Node 6
+
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                 Class
+Variable                             3                       4                       5                       6                       7                       8
+==============================================================================================================================================================
+pCluster_0_0                   34.9471                  2.4994                  1.4277                 -0.0043                 -8.1627                  2.8106
+pCluster_0_1                  511.7237                479.7724                480.1317                477.3736                476.3771                479.5688
+pCluster_1_0                   25.1194                 -3.7665                  -4.703                 -6.8026                -29.4773                -26.1792
+pCluster_1_1                  172.3762                145.1928                143.4079                139.3157                  134.18                130.7358
+pCluster_2_0                  -19.9763                -45.3086                -43.4806                -46.4456                -46.1448                -44.8659
+pCluster_2_1                  294.1628                 269.349                270.0712                267.4772                267.6243                266.7025
+pCluster_3_0                  -44.2367                -74.5015                 -72.705                -74.0922                -74.8947                -74.3957
+pCluster_3_1                   -42.156                -71.7706                -71.6281                -72.0655                -71.0089                -69.1913
+pCluster_4_0                  -52.1204                -81.2961                -79.2609                -79.3208                -77.1974                -77.1038
+pCluster_4_1                  -42.4553                 -73.835                -73.1539                -72.6718                -69.8857                -69.1422
+pCluster_5_0                  -57.6821                -85.0976                -64.0065                -64.8602                -62.6703                -59.8071
+pCluster_5_1                  -20.2343                -47.5575                -51.3853                -49.9859                -46.4406                -42.9791
+pCluster_6_0                  -47.3255                -78.0385                -79.3314                -91.6775               -117.1748               -524.4093
+pCluster_6_1               -11125.0824               -191.1062               -651.3909                -83.7426                -81.3882                -78.4237
+Intercept                      45.2494                 76.0395                 77.4488                 79.3735                 77.3452                 74.6594
+
+
+Odds Ratios...
+                                 Class
+Variable                             3                       4                       5                       6                       7                       8
+==============================================================================================================================================================
+pCluster_0_0     1.5042512771344855E15                 12.1749                   4.169                  0.9957                  0.0003                 16.6196
+pCluster_0_1    1.7328717653835654E222  2.3040507859302885E208  3.3001718341966104E208  2.0927263820017146E207   7.725458038805065E206  1.8797614466701434E208
+pCluster_1_0      8.114015000333684E10                  0.0231                  0.0091                  0.0011                       0                       0
+pCluster_1_1       7.27806725756544E74   1.1387751481028294E63   1.9110107431546173E62   3.1917343823752855E60   1.8777265141438226E58    5.995589462785668E56
+pCluster_2_0                         0                       0                       0                       0                       0                       0
+pCluster_2_1    5.6657731189990775E127   9.479672805470785E116  1.9516971101548515E117  1.4584201064679646E116   1.689569227909701E116    6.72085506052146E115
+pCluster_3_0                         0                       0                       0                       0                       0                       0
+pCluster_3_1                         0                       0                       0                       0                       0                       0
+pCluster_4_0                         0                       0                       0                       0                       0                       0
+pCluster_4_1                         0                       0                       0                       0                       0                       0
+pCluster_5_0                         0                       0                       0                       0                       0                       0
+pCluster_5_1                         0                       0                       0                       0                       0                       0
+pCluster_6_0                         0                       0                       0                       0                       0                       0
+pCluster_6_1                         0                       0                       0                       0                       0                       0
+
+
+
+Time taken to build model: 18.36 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         677               55.3105 %
+Incorrectly Classified Instances       547               44.6895 %
+Kappa statistic                          0.2677
+Mean absolute error                      0.1654
+Root mean squared error                  0.2907
+Relative absolute error                 85.6342 %
+Root relative squared error             93.5663 %
+Total Number of Instances             1224     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.586     0.172     3
+                 0.022    0.004    0.167      0.022    0.038      0.048    0.796     0.150     4
+                 0.456    0.109    0.652      0.456    0.537      0.390    0.788     0.587     5
+                 0.829    0.593    0.528      0.829    0.645      0.256    0.637     0.569     6
+                 0.245    0.039    0.571      0.245    0.343      0.298    0.813     0.446     7
+                 0.026    0.004    0.167      0.026    0.045      0.055    0.758     0.090     8
+                 0.000    0.002    0.000      0.000    0.000      -0.001   0.060     0.001     9
+Weighted Avg.    0.553    0.304    0.546      0.553    0.514      0.289    0.723     0.520     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   <-- classified as
+   0   0   1   5   0   0   0 |   a = 3
+   0   1  18  27   0   0   0 |   b = 4
+   0   5 172 194   6   0   0 |   c = 5
+   0   0  67 451  22   1   3 |   d = 6
+   0   0   4 152  52   4   0 |   e = 7
+   0   0   2  25  10   1   0 |   f = 8
+   0   0   0   0   1   0   0 |   g = 9
+
